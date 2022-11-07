@@ -35,5 +35,13 @@ print('Quantidade Instagram: {}'.format(qtde_igfb_org))
 print('Quantidade Youtube: {}'.format(qtde_yt_org))
 print('Quantidade Site: {}'.format(qtde_site_org))
 
+#salvar novo arquivo txt
+with open('Indicadores.txt', 'w') as arquivo_indicadores:
+    arquivo_indicadores.write('Quantidade Anuncio: {}\n'.format(qtde_anuncio))
+    arquivo_indicadores.write('Quantidade Orgânico: {}\n'.format(qtde_org))
+    arquivo_indicadores.write('Quantidade Instagram: {}\n'.format(qtde_igfb_org))
+    arquivo_indicadores.write('Quantidade Youtube: {}\n'.format(qtde_yt_org))
+    arquivo_indicadores.write('Quantidade Site: {}\n'.format(qtde_site_org))
+
 #fechar arquivo
 arquivo.close()
